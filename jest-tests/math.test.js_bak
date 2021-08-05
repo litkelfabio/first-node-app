@@ -1,0 +1,41 @@
+// const { calcTip, fahrenheitToCelsius, celsiusToFahrenheit, add } = require('../src/math')
+
+// test('calculate total with tip' , () => {
+//     const total = calcTip(12, .5);
+//     expect(total).toBe(18)
+//     // if(total !== 18){
+//     //     throw new Error('Total should 18. Got ' + total);
+//     // }
+// });
+
+// test('default', () =>  {
+//     expect(calcTip(12)).toBe(14.4)
+// });
+
+// test('Should convert 32 F to 0 C', () => {
+//     expect(fahrenheitToCelsius(32)).toBe(0)
+// });
+
+// test('Should convert 0 C to 32 F', () => {
+//     expect(celsiusToFahrenheit(0)).toBe(32)
+// });
+
+// //call the done to wait for the settimeout
+// // test('async test demo', (done) => {
+// //     setTimeout(() => {
+// //         expect(1).toBe(2)
+// //         done();
+// //     }, 2000);
+// // });
+
+// test('Async await', (done) => {
+//     add(2, 3).then((sum) => {
+//         expect(sum).toBe(5)
+//         done();
+//     });
+// });
+
+// test('Should add async await', async() => {
+//     const sum = await add(2, 3);
+//     expect(sum).toBe(5);
+// })

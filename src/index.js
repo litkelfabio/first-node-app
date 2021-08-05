@@ -1,23 +1,12 @@
 //use npm run dev, configure on package.json before running
+const app = require('./app')
 
-const express = require('express');
-require('./db/mongoose');
-
-const userRouter = require('./routers/user');
-const taskRouter = require('./routers/task');
-const app = express();
 const port = process.env.PORT || 3000;
 
 //test function for error
 // const testErrorMiddleware = (req, res, next) => {
 //     throw new Error('Testing errorMiddleware')
 // }
-
-app.use(express.json());// converting all response to json
-//USER
-app.use(userRouter)
-//TASKS
-app.use(taskRouter)
 
 app.listen(port, () => {
     console.log('Server running on port ', port);
